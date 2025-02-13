@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Святого Валентина, моя Улечка❤️</title>
+    <style>
+        body {
+            background: #ffc0cb;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #d10068;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 24px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            max-width: 80%;
+        }
+        .btn {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff1493;
+        }
+        .hello-kitty {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hello_Kitty_character_portrait.png" alt="Hello Kitty" class="hello-kitty">
+        <h1>С Днем Святого Валентина, Ульяна!</h1>
+        <p>Нажми на кнопку ниже, чтобы увидеть мое признание!</p>
+        <button class="btn" onclick="showMessage()">Открыть поздравление</button>
+        <div class="hidden-message" id="message">
+            💖 Ульяна, ты самая прекрасная и удивительная! 💖<br><br>
+            Я тебя очень сильно люблю и хочу, чтобы ты всегда была счастлива. <br>
+            Пусть этот день наполнится улыбками, радостью и теплотой! 💕
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
